@@ -4,7 +4,7 @@ import About from "./components/About";
 import Login from "./components/Login";
 import Accordion from "./components/Accordion";
 import ProtectedRoute from "./components/ProtectedRoute";
-import Comment from "./components/Comment";
+import Comments from "./components/comment/Comments";
 
 function App() {
   return (
@@ -23,8 +23,8 @@ function App() {
             <a href="/accordion" className="hover:underline">
               Accordion
             </a>
-            <a href="/comment" className="hover:underline">
-              Comment
+            <a href="/comments" className="hover:underline">
+              Comments
             </a>
             <a href="/login" className="hover:underline">
               Login
@@ -40,7 +40,7 @@ function App() {
             <Route path="/about" element={<About />} />
           </Route>
           <Route path="/accordion" element={<Accordion />} />
-          <Route path="/comment" element={<Comment />} />
+          <Route path="/comments" element={<Comments />} />
           <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
