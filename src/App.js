@@ -7,6 +7,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Comments from "./components/comment/Comments";
 import ImageSlider from "./components/ImageSlider";
 import Pagination from "./components/pagination/Pagination";
+import LiveChat from "./components/live-chat/LiveChat";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
               Home
             </a>
           </div>
-          <div className="flex gap-4">
+          <div className="flex gap-8">
             <a href="/about" className="hover:underline">
               About
             </a>
@@ -33,6 +34,9 @@ function App() {
             </a>
             <a href="/pagination" className="hover:underline">
               Pagination
+            </a>
+            <a href="/live" className="hover:underline">
+              Live Chat
             </a>
             <a href="/login" className="hover:underline">
               Login
@@ -51,6 +55,7 @@ function App() {
           <Route path="/comments" element={<Comments />} />
           <Route path="/image-slider" element={<ImageSlider />} />
           <Route path="/pagination" element={<Pagination />} />
+          <Route path="/live" element={<LiveChat />} />
           <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
