@@ -18,8 +18,8 @@ const AccordionItem = ({ data, isOpen, setIsOpen }) => {
           </span>
         </div>
         <div
-          className={`overflow-hidden transition-max-height duration-500 ease-in-out ${
-            isOpen ? "max-h-96" : "max-h-0"
+          className={`overflow-hidden transition-all duration-500 ease-in-out ${
+            isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
           }`}
         >
           <div className="p-2">

@@ -34,6 +34,7 @@ const Body = () => {
       ))}
 
       {showShimmer && <Shimmer />}
+      {}
     </div>
   );
 };

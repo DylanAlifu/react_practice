@@ -5,6 +5,8 @@ import Login from "./components/Login";
 import Accordion from "./components/Accordion";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Comments from "./components/comment/Comments";
+import ImageSlider from "./components/ImageSlider";
+import Pagination from "./components/pagination/Pagination";
 
 function App() {
   return (
@@ -26,6 +28,12 @@ function App() {
             <a href="/comments" className="hover:underline">
               Comments
             </a>
+            <a href="/image-slider" className="hover:underline">
+              Image-Slider
+            </a>
+            <a href="/pagination" className="hover:underline">
+              Pagination
+            </a>
             <a href="/login" className="hover:underline">
               Login
             </a>
@@ -41,6 +49,8 @@ function App() {
           </Route>
           <Route path="/accordion" element={<Accordion />} />
           <Route path="/comments" element={<Comments />} />
+          <Route path="/image-slider" element={<ImageSlider />} />
+          <Route path="/pagination" element={<Pagination />} />
           <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
